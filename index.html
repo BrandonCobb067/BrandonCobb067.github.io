@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .body11 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+            background-color: #2b3047;
+            color: #f4f4f4;
+        }
+
+        .info-container {
+            width: 46%;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-container.left {
+            align-self: flex-start;
+            text-align: center;
+            padding-left: 0.5%;
+            margin-top: -100px;
+        }
+
+        .info-container.right {
+            align-self: flex-end;
+            text-align: center;
+            padding-right: 2.5%;
+            margin-top: -75px;
+        }
+
+        .info-box {
+            width: 100%;
+            height: 150px;
+            font-size: 1.2em;
+            color: #f4f4f4;
+            padding: 20px;
+            background-color: #454b66;
+            border-radius: 10px;
+        }
+
+
+
+    </style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Brandon Cobb's Portfolio</title>
@@ -9,11 +59,13 @@
 <body style="background-color: #454b66; color: #f4f4f4; margin: 0; margin-left: 0px">
     <header>
         <div class="banner"> 
-            <!-- Add jumps to sections -->
             <b style="font-family: MS; font-size: 30px; margin-left: 80px; display: inline-block; margin-top: 12px;">                
                 <a href="#" onclick="window.scrollTo(0, 0);" style="text-decoration: none; color: inherit">Brandon Cobb Portfolio</a>
             </b>
 
+            <a href="/Brandon Cobb Resume.pdf" download class="resume-button" style="position: absolute; left: 50%; transform: translate(-50%, -50%); font-family: MS; top: 50%; text-decoration: none; padding: 10px 20px; background-color: #1a182b; color: white; border-radius: 5px; font-size: 26px;">
+                Download Resume
+            </a>
             
             <a href="https://www.linkedin.com/in/brandon-cobb-02849b220/" target="_blank"><img src="\images\Linkedin.png" alt="linkedin" class="icon grey-hover" style="margin-right: 80px;"></a>
             <a href="https://github.com/BrandonCobb067" target="_blank"><img src="\images\github.png" alt ="github" class="icon grey-hover"></a>
@@ -26,9 +78,9 @@
         </div>
         <div class="header">
             <div style="margin-left: 80px;">
-                <h4 style="margin: 0 auto; font-size: 30px; width: 80%; margin-top: 200px;" > Hello!</h4>
-                <h1 style="font-size: 70px; width: 80%; margin: 0 auto;">I'm Brandon Cobb</h1>
-                <h2 style="width: 80%; margin: 0 auto; margin-bottom: 300px;">
+                <h4 style="margin: 0 auto; font-size: 3vw; width: 80%; margin-top: 200px;" > Hello!</h4>
+                <h1 style="font-size: 5vw; width: 80%; margin: 0 auto;">I'm Brandon Cobb</h1>
+                <h2 style="width: 80%; margin: 0 auto; margin-bottom: 300px; font-size: 2vw;">
                     Junior at Missouri S&T studying to get a bachelor's <br>
                     degree in Computer Science
                 </h2>
@@ -39,44 +91,59 @@
 
 
 
-    <div class="body1">
-        <h2 style="text-align: center; font-size: 40px;">
-            <br>About Me
-        </h2>
-        <p style="margin: -35px;">
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ligula a nisi commodo, ac pellentesque libero suscipit. Vestibulum malesuada mauris at enim sagittis, vel tincidunt odio lacinia. Aliquam in tellus quis ipsum blandit faucibus vel quis ex. In vitae lectus elit. Morbi sollicitudin purus nunc, non congue metus dictum ac. Maecenas fringilla purus at arcu lacinia laoreet. Fusce eget risus in dolor venenatis dictum ut nec enim. Quisque sed molestie turpis. Fusce id arcu eu sapien tristique fermentum a ac ex. Fusce eu nisi ac eros facilisis auctor sed euismod dui. Phasellus vel ex ut eros sollicitudin vulputate quis vel massa. Quisque aliquam enim vel magna feugiat, sit amet gravida leo tristique. Donec eget mauris quis odio maximus congue. Sed malesuada mauris non dui tincidunt luctus..
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </p>
+    <div class="body11">
+        <h2 style="text-align: center; font-size: 40px;"><br>About Me</h2>
+    
+        <div class="info-container left" style="margin-top: 0px">
+            <div class="info-box">
+                <p>I am a straight A student with a 4.0 GPA. It is my third year at Missouri S&T</p>
+            </div>
+        </div>
+    
+        <div class="info-container right">
+            <div class="info-box">
+                <p>I have made the dean's list every semester and am a Kummer Vanguard Scholar</p>
+            </div>
+        </div>
+    
+        <div class="info-container left">
+            <div class="info-box">
+                <p>I enjoy spending time outside playing sports like socccer, ping pong, tennis, and volleyball.</p>
+            </div>
+        </div>
+    
+        <div class="info-container right">
+            <div class="info-box">
+                <p>I always try and help other students or coworkers if they are struggling.</p>
+            </div>
+        </div>
+    
+        <div class="info-container left">
+            <div class="info-box">
+                <p>I have been actively coding for 5 years, and coding in a professional environment for 2 years.</p>
+            </div>
+        </div>
+    
+        <div class="info-container right">
+            <div class="info-box">
+                <p>Outside of classes I enjoy 3D printing, modeling in Inventor, soldering, and videogames.</p>
+            </div>
+        </div>
     </div>
 
-
-
-    <footer class="footer">
+    <footer class="footer" style="width: 100%; margin: 0 auto; text-align: center;">
         <h3 style="margin-top: 0px;">
             <u>Contact Me</u>
         </h3>
-        <div style="text-align: left; width: 80%; margin: 0 auto;">
-            <b>Phone:</b>
-            (816) 500-4251
+        <div style="display: flex; justify-content: space-between; align-items: center; text-align: center; margin-top: 10px;">
+            <div style="flex: 1;">
+                <b>Phone:</b> (816) 500-4251
+            </div>
+            <div style="flex: 1;">
+                <b>Email:</b> BrandonCobb067@gmail.com
+            </div>
         </div>
     </footer>
+    
 </body>
 </html>

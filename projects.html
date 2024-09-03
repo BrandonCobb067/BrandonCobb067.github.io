@@ -1,74 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Brandon Cobb's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #454b66;
+            color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* GIF Background */
+        .gif-bg {
+            background: url('images/hgjbuqpshv7xg1bypizm.gif') no-repeat center center fixed;
+            background-size: cover;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+
+        .header {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-divider {
+            height: 50px;
+            background: url('images/divider.png') repeat-x;
+            margin: 40px 0;
+        }
+
+        .quote-section {
+            background-color: #2c2f4a;
+            padding: 40px 20px;
+            text-align: center;
+            font-style: italic;
+            font-size: 24px;
+            color: #d4d4d4;
+            border-left: 5px solid #5a5eff;
+            margin: 20px;
+        }
+
+        .skills-section {
+            background-color: #3c3f5c;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            color: #fff;
+        }
+
+        .skill-box {
+            background-color: #5a5eff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-section {
+            background-color: #2c2f4a;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            margin-top: 0;
+            color: #ff6f91;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px auto;
+            max-width: 1200px;
+        }
+
+        .project-card {
+            background-color: #2c2f4a;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-image {
+            background-color: #3c3f5c;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #888;
+        }
+
+        .project-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #5a5eff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #3a3ac8;
+        }
+
+    </style>
 </head>
-<body style="background-color: #454b66; color: #f4f4f4; margin: 0; margin-left: 0px">
+<body>
+    <div class="gif-bg">
+        Welcome to My Portfolio
+    </div>
+    
     <header>
         <div class="banner"> 
-            <!-- Add jumps to sections -->
             <b style="font-family: MS; margin-top: 12px; font-size: 30px; margin-left: 80px; display: inline-block;">
                 <a href="index.html" onclick="window.scrollTo(0, 0);" style="text-decoration: none; color: inherit">Brandon Cobb Portfolio</a>
             </b>
-
-            
-            <a href="https://www.linkedin.com/in/brandon-cobb-02849b220/" target="_blank"><img src="\images\Linkedin.png" alt="linkedin" class="icon grey-hover" style="margin-right: 80px;"></a>
-            <a href="https://github.com/BrandonCobb067" target="_blank"><img src="\images\github.png" alt ="github" class="icon grey-hover"></a>
-            <a href="mailto:BrandonCobb067@gmail.com" target="_blank"><img src="\images\email.png" alt ="email" class="icon grey-hover"></a>
+            <a href="/Brandon Cobb Resume.pdf" download class="resume-button" style="position: absolute; left: 50%; transform: translate(-50%, -50%); font-family: MS; top: 50%; text-decoration: none; padding: 10px 20px; background-color: #1a182b; color: white; border-radius: 5px; font-size: 26px;">
+                Download Resume
+            </a>
+            <a href="https://www.linkedin.com/in/brandon-cobb-02849b220/" target="_blank"><img src="images/Linkedin.png" alt="LinkedIn" class="icon grey-hover" style="margin-right: 80px;"></a>
+            <a href="https://github.com/BrandonCobb067" target="_blank"><img src="images/github.png" alt="GitHub" class="icon grey-hover"></a>
+            <a href="mailto:BrandonCobb067@gmail.com" target="_blank"><img src="images/email.png" alt="Email" class="icon grey-hover"></a>
             <a href="school.html"><b class="tabs grey-hover"> School </b></a>
             <a href="#"><b class="tabs grey-hover"><u>Projects</u></b></a>
             <a href="experience.html"><b class="tabs grey-hover"> Experience </b></a>
             <a href="index.html"><b class="tabs grey-hover"> Home </b></a>
-
-        </div>
-        <div class="header">
-            <div style="margin-left: 80px;">
-                <h4 style="margin: 0 auto; font-size: 30px; width: 80%; margin-top: 200px;" > Hello!</h4>
-                <h1 style="font-size: 70px; width: 80%; margin: 0 auto;">I'm Brandon Cobb</h1>
-                <h2 style="width: 80%; margin: 0 auto; margin-bottom: 300px;">
-                    Junior at Missouri S&T studying to get a bachelor's <br>
-                    degree in Computer Science
-                </h2>
-                <img src="/images/20231229_203647.jpg" alt="Brandon Image" style="float: right; margin: 0 auto; margin-top: -690px; margin-right: 200px;">
-            </div>
         </div>
     </header>
 
-    <div class="body2">
-        <h2 style="text-align: center; font-size: 40px;">
-            <br>Projects
-        </h2>
-        <p style="margin: 80px;">
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ligula a nisi commodo, ac pellentesque libero suscipit. Vestibulum malesuada mauris at enim sagittis, vel tincidunt odio lacinia. Aliquam in tellus quis ipsum blandit faucibus vel quis ex. In vitae lectus elit. Morbi sollicitudin purus nunc, non congue metus dictum ac. Maecenas fringilla purus at arcu lacinia laoreet. Fusce eget risus in dolor venenatis dictum ut nec enim. Quisque sed molestie turpis. Fusce id arcu eu sapien tristique fermentum a ac ex. Fusce eu nisi ac eros facilisis auctor sed euismod dui. Phasellus vel ex ut eros sollicitudin vulputate quis vel massa. Quisque aliquam enim vel magna feugiat, sit amet gravida leo tristique. Donec eget mauris quis odio maximus congue. Sed malesuada mauris non dui tincidunt luctus..
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </p>
+    <!-- Project Section -->
+    <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/preview1.png" alt="Project Image 1" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="project-content">
+                <div class="project-title">Sorting Algorithm Visualization</div>
+                <div class="project-description">Through this project I demonstrated my knowledge of not only different sorting algorithms and my ability to implement and use them but also my knowledge of JavaScript and HTML. This website can be used to help people unfamiliar with algorithms better visualize how they work and the benefits they can provide.</div>
+                <a href="https://brandoncobb067.github.io/SortingVisualization/" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/preview2.png" alt="Project Image 2" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="project-content">
+                <div class="project-title">Image Sorting Algorithm</div>
+                <div class="project-description">Using my knowledge from the previous project I was able to apply what I learned about sorting algorithms and how to implement them using HTML and JavaScript to implement a creative and unique way to visualize sorting algorithms for users to interact with and learn about different algorithms.</div>
+                <a href="https://brandoncobb067.github.io/ImageSorting/" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer">
-        <h3 style="margin-top: 0px">
-            Contact Me
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+        <div class="skill-box">HTML & CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Salesforce</div>
+        <div class="skill-box">SQL</div>
+        <div class="skill-box">Git & GitHub</div>
+    </div>
+
+    <footer class="footer" style="width: 100%; margin: 0 auto; text-align: center;">
+        <h3 style="margin-top: 0px;">
+            <u>Contact Me</u>
         </h3>
+        <div style="display: flex; justify-content: space-between; align-items: center; text-align: center; margin-top: 10px;">
+            <div style="flex: 1;">
+                <b>Phone:</b> (816) 500-4251
+            </div>
+            <div style="flex: 1;">
+                <b>Email:</b> BrandonCobb067@gmail.com
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
