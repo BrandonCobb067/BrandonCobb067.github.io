@@ -111,7 +111,7 @@
     position: absolute;
     top: 10vh;
     right: 5vw;
-    margin-top: 50px; 
+    margin-top: 45px; 
     max-width: 30vw; /* Ensure a maximum size */
     max-height: 30vw; /* Ensure a maximum size */
 }
